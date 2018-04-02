@@ -54,11 +54,11 @@ body {
   opacity: .92;
   z-index: 90;
   position: fixed;
-  transform: translateX(100%);
+  transform: translateX(0%);
   transition: transform ease .7s;
 }
-.visibility{
-  transform: translateX(0%);
+.visible {
+  transform: translateX(100%);
   z-index: 20;
 }
 .nav__items {
@@ -73,6 +73,9 @@ body {
   font-weight: bold;
   text-decoration: none;
   margin: 0 auto;
+}
+.nav__link:hover {
+  text-decoration: underline;
 }
 .nav-close {
   background-image: url(../images/ico-close.svg);
@@ -121,6 +124,7 @@ body {
 .page__footer-copy {
   text-align: center;
   font-size: 14px;
+  font-family: 'Arial';
   margin: auto;
   padding: 8px;
   border-radius: 5px;
@@ -131,12 +135,6 @@ body {
 
 
 /*MEDIAQUERIES*/
-
-@media all and (min-width: 490px) {
-  .page__main-title {
-    font-size: 38px;
-  }
-}
 
 @media all and (min-width: 768px) {
   .page__main{

@@ -1,20 +1,18 @@
 'use strict'
 
-var textButton = document.querySelector('.nav-trigger');
-var textButton2 = document.querySelector('.nav-close');
-textButton.innerHTML = '';
-textButton2.innerHTML = '';
+var button1 = document.querySelector('.nav-trigger');
+var button2 = document.querySelector('.nav-close');
+
+//Quitar texto botones
+button1.innerHTML = '';
+button2.innerHTML = '';
 
 // Menú desplegable
 var menuBox = document.querySelector('.nav');
-var menuButton = document.querySelector('.nav-trigger');
-var buttonClose = document.querySelector('.nav-close');
-
-// Función para abrir y cerrar
+      // Función para abrir y cerrar
 function openCloseMenu() {
-menuBox.classList.toggle('visibility');
+  menuBox.classList.toggle('visible');
 };
-
-//El 'click'
-menuButton.addEventListener('click', openCloseMenu);
-buttonClose.addEventListener('click', openCloseMenu);
+      //El 'click'
+button1.addEventListener('click', openCloseMenu);
+button2.addEventListener('click', openCloseMenu);
